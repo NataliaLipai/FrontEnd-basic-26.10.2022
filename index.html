@@ -1,41 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homework3</title>
+    <title>Homework4</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body class="body">
     <header>
-        <nav>
-            <a href="./gallery.html">Gallery</a>
-        </nav>
+        
     </header>
     <main>
-        
-<h1>Terminal</h1>
-
-    <hr>
-    
-<img src="./images/image1.jpeg" alt="Terminal_1" width="300" height="200">
-<h2>Git commands</h2>
+            <h1>Homework 4</h1>
+            <hr>
+            <section>
+            <h2>Частина 1: Типи селекторів</h2>
+            <hr>
     <ul>
-        <li>git clone - клонування репозиторію на локальний диск</li>
-        <li>git add. - зберегти всі файли в історії</li>
-        <li>git status - перевірка статусу файлів</li>
-        <li>git commit -m "" - додавання опису змін </li>
-        <li>git remote -v - перевірити підключення репозиторію</li>
-        <li>git push origin HEAD - відправити на сервер</li>
-        <li>git pull origin main - перенести з сервера на локальний диск</li>
-        <li>git checkout main - перевірити зміни</li>
-        <li>git branch - переключитися між гілками</li>
-        <li>git log - подивитися історію змін</li>
+        <li>* - універсальний селектор, вибирає всі елементи</li>
+        <li>h - селектор заголовків (h1, h2, h3, h4, h5, h6)</li>
+        <li>p - селектор абзаців</li>
+        <li>.some-class - селектор класу, визначає стиль для кількох елементів одного типу </li>
+        <li>#id - селектор ідентифікатору</li>
+        <li>[data-target] - селектор елементів з атрибутом "data-target"</li>
+        <li>div + p - комбінатор "плюс" обирає елемент (абзац), який розташований відразу за елементом div</li>
+        <li>div p - комбінатор "пробіл" обирає елементи (абзаци), які знаходяться всередині батьківського елемента div (незалежно від рівня вкладеності)</li>
+        <li>div ~ p - комбінатор "тільда" обірає елементи (абзаци), які знаходяться на тому ж рівні вкладеності, після зазначеного елементу div</li>
     </ul>
     <hr>
-    <img src="./images/image2.jpeg" alt="Terminal_1" width="300" height="200">
+    </section>
+    <section>
+    <h2>Частина 2: Використання селекторів для зміни кольорів в текстових елементах (10 прикладів)</h2>
+    <hr>
+        <p>Приклад 1 - селектор за назвою елемента (абзац)</p>
+        <hr>
+        <h3>Приклад 2 - селектор за назвою елемента (заголовок третього рівня)</h3>
+        <hr>
+        <p id="identificator" class="paragraph">Приклад 3 - селектор за ідентифікатором, як ідентифікатор використовуємо слово identificator</p>
+        <hr>
+            <h4 class="article-title">Приклад 4 - селектор за класом (заголовок)</h4>
+            <h5 class="article-title">Приклад 4 - селектор за класом (заголовок)</h5>
+        <hr>
+            <p class="aaa">
+                Приклад 5 - селектор за делількома класами (клас aaa)
+            </p>
+            <p class="bbb">
+                Приклад 5 - селектор за декількома класами (клас bbb)
+            </p>
+            <p class="aaa bbb">
+                Приклад 5 - селектор за декількома класами (обидва класи)
+            </p>
+        <hr>
+            <div class="wrapper">
+                <p class="text">Приклад 6 - селектор за вкладеністю (текст в обгортці)</p>
+            </div>
+            <div class="news-card">
+                  <h6 class="news-card__title">Заголовок</h6>
+                  <p class="text news-card__text">Приклад 6 - селектор за вкладеністю (текст усередині вкладеної картки)</p>
+            </div>
+        <hr>
+            <p>Приклад 7 - селектор, що знаходить <span class="text-oc">фрагмент</span> в будь-якому місці текста</p>
+        <hr>
+        <blockquote cite="Цитата">Приклад 8 - селектор по атрибуту (цитата)</blockquote>
+        <hr>
+        <div lang="en-us en-gb en-au en-nz">Приклад 9 - складний селектор по атрибуту (обирає елементи, атрибут яких повністю співпадає з визначеним значенням або із значенням та дефісом)</div>
+        <div lang="uk-au">Приклад 9 - складний селектор по атрибуту</div>
+        <div lang="uk-ru">Приклад 9 - складний селектор по атрибуту</div> 
+        </section>
+        <hr>
+        <p>Приклад 10 - <span>селектор за тегом</span>:</p>
+<ul>
+  <li>знаходить елемент на сторінці за імененем тегу:</li>
+  <li><span>виділити можливо цілу фразу</span>;</li>
+  <li>або окреме <span>слово</span>.</li>
+</ul>
+<hr>
     </main>
     <footer>
-    <h3>Homework 3</h3></footer>
+    </footer>
 </body>
 </html>
