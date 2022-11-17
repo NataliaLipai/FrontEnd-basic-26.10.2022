@@ -40,3 +40,14 @@ h1 {
 .section1 {
     background: lightgrey;
 }
+.container {
+    width: 90%;
+    max-width: calc(1110px + 2rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid: gap 20px;
+}
