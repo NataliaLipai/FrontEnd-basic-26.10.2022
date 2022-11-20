@@ -1,11 +1,10 @@
-.OSStore
 .DS_Store
 _MACOSX
 .idea
 .vscode
 /logs
 *.log
-npn-debug.log
+npm-debug.log*
 /node_modules
 package-lock.json
 /package-lock.json
