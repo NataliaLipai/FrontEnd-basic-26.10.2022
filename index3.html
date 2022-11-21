@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework7</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<header>
+    Homework 7 - сторінка 3
+</header>
+
+<body>
+    <form action="https://fom.in.ua/echo" method="post">
+        <fieldset>
+            <legend>Пошук</legend>
+    <div class="form_auth_block">
+        <div class="form_auth_block_content">
+            <p class="form_auth_block_text">Оберіть критерії пошуку</p>
+            <div class="wrapper">
+                <div class="item-column primary-column">
+                    <p class="item-column primary-column">Тип кузову</p>
+                    <div class="m-rows">
+                        <select id="categories1" name="category_id" data-field="category" aria-label="Тип кузову" data-placeholder="Будь-який" class="e-form">
+                            <option value="0">Будь-який</option>
+                            <option value="1">Седан</option>
+                            <option value="2">Універсал</option>
+                            <option value="3">Кросовер</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="item-column primary-column">
+                    <p class="item-column primary-column">Марка авто</p>
+                    <div class="m-rows">
+                        <select id="categories2" name="category_id" data-field="category" aria-label="Марка авто" data-placeholder="Будь-який" class="e-form">
+                            <option value="0">Будь-яка</option>
+                            <option value="1">Mersedes</option>
+                            <option value="2">BMV</option>
+                            <option value="3">Audi</option>
+                            <option value="4">Volkswagen</option>
+                            <option value="5">Peugeot</option>
+                            <option value="6">Subaru</option>
+                            <option value="7">Daewoo</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="item-column primary-column">
+                    <p class="item-column primary-column">Країна-виробник</p>
+                    <div class="m-rows">
+                        <select id="categories3" name="category_id" data-field="category" aria-label="Країна-виробник" data-placeholder="Будь-який" class="e-form">
+                            <option value="0">Будь-яка</option>
+                            <option value="1">Німеччина</option>
+                            <option value="2">Франція</option>
+                            <option value="3">Корея</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="item-column primary-column">
+                    <p class="item-column primary-column">Ціна</p>
+                    <div class="m-rows">
+                        <select id="categories4" name="category_id" data-field="category" aria-label="Ціна" data-placeholder="Будь-який" class="e-form">
+                            <option value="0">Будь-яка</option>
+                            <option value="1">Від 0 до 1000 євро</option>
+                            <option value="0">Від 1001 до 10000 євро</option>
+                            <option value="0">Більше 10000 євро</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="item-column primary-column">
+                    <p class="item-column primary-column">Рік випуску (оберіть рік)</p>
+                    <div class="m-rows e-year">
+                        
+                            <span class="Рік випуску"></span>
+                    <div class="popup-wrap">
+                        <select id="yearFrom" name="s_years[0]" data-placeholder="Від" aria-labelledby="yearsLabel" aria-label="Від" class="e-form field _grey">
+                        <option value="0" selected="selected">Від</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        </select>
+                        <select id="yearTo" name="po_years[0]" data-placeholder="До" aria-labelledby="yearsLabel" aria-label="До" class="e-form field _grey">
+                        <option value="0" selected="selected">До</option>
+                        <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            </select>
+                    </div>
+                        
+                    </div>
+                </div>
+                <div class="item-column secondary-column">
+                    <p class="item-column secondary-column">Стан</p>
+                    <div class="m-rows">
+                        <select id="categories6" name="category_id" data-field="category" aria-label="Стан" data-placeholder="Будь-який" class="e-form">
+                            <option value="0">Будь-який</option>
+                            <option value="1">Бита</option>
+                            <option value="2">У кредиті</option>
+                            <option value="3">Не розмитнена</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="item-column secondary-column">
+                    <p class="item-column secondary-column">Тип палива</p>
+                    <div class="m-rows">
+                        <select id="categories7" name="category_id" data-field="category" aria-label="Тип палива" data-placeholder="Будь-який" class="e-form">
+                            <option value="0">Будь-яке</option>
+                            <option value="1">Бензин</option>
+                            <option value="2">Дизель</option>
+                            <option value="3">Електро</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="item-column secondary-column">
+                    <p class="item-column secondary-column">Тип коробки передач</p>
+                    <div class="m-rows">
+                        <select id="categories8" name="category_id" data-field="category" aria-label="Тип коробки передач" data-placeholder="Будь-який" class="e-form">
+                            <option value="0">Будь-яка</option>
+                            <option value="1">Механіка</option>
+                            <option value="2">Автомат</option>
+                            <option value="3">Робот</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="item-column secondary-column">
+                    <p class="item-column secondary-column">Колір</p>
+                    <div class="m-rows">
+                        <select id="categories9" name="category_id" data-field="category" aria-label="Колір" data-placeholder="Будь-який" class="e-form">
+                            <option value="0">Будь-який</option>
+                            <option value="1">Білий</option>
+                            <option value="2">Червоний</option>
+                            <option value="3">Сріблястий</option>
+                            <option value="4">Чорний</option>
+                            <option value="5">Синій</option>
+                            <option value="6">Зелений</option>
+                            <option value="7">Жовтий</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="item-column secondary-column">
+                    <p class="item-column secondary-column">Комфорт</p>
+                    <div class="m-rows">
+                        <select id="categories10" name="category_id" data-field="category" aria-label="Комфорт" data-placeholder="Будь-який" class="e-form">
+                            <option value="0">Будь-який</option>
+                            <option value="1">Повний люкс</option>
+                            <option value="0">Люк</option>
+                            <option value="0">Шкіряний салон</option>
+                        </select>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+</fieldset>
+<button class="form_search_button" type="submit" name="form_search_submit">Пошук</button>
+    </form>
+</body>
+</html>
