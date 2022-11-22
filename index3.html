@@ -22,7 +22,7 @@
                 <div class="item-column primary-column">
                     <p class="item-column primary-column">Тип кузову</p>
                     <div class="m-rows">
-                        <select id="categories1" name="category_id" data-field="category" aria-label="Тип кузову" data-placeholder="Будь-який" class="e-form">
+                        <select name="body_type">
                             <option value="0">Будь-який</option>
                             <option value="1">Седан</option>
                             <option value="2">Універсал</option>
@@ -33,7 +33,7 @@
                 <div class="item-column primary-column">
                     <p class="item-column primary-column">Марка авто</p>
                     <div class="m-rows">
-                        <select id="categories2" name="category_id" data-field="category" aria-label="Марка авто" data-placeholder="Будь-який" class="e-form">
+                        <select name="car_brand">
                             <option value="0">Будь-яка</option>
                             <option value="1">Mersedes</option>
                             <option value="2">BMV</option>
@@ -48,7 +48,7 @@
                 <div class="item-column primary-column">
                     <p class="item-column primary-column">Країна-виробник</p>
                     <div class="m-rows">
-                        <select id="categories3" name="category_id" data-field="category" aria-label="Країна-виробник" data-placeholder="Будь-який" class="e-form">
+                        <select name="country_producer">
                             <option value="0">Будь-яка</option>
                             <option value="1">Німеччина</option>
                             <option value="2">Франція</option>
@@ -57,20 +57,35 @@
                     </div>
                 </div>
                 <div class="item-column primary-column">
-                    <p class="item-column primary-column">Ціна</p>
-                    <div class="m-rows">
-                        <select id="categories4" name="category_id" data-field="category" aria-label="Ціна" data-placeholder="Будь-який" class="e-form">
-                            <option value="0">Будь-яка</option>
-                            <option value="1">Від 0 до 1000 євро</option>
-                            <option value="0">Від 1001 до 10000 євро</option>
-                            <option value="0">Більше 10000 євро</option>
+                    <p class="item-column primary-column">Ціна (оберіть ціну)</p>
+                    <div class="m-rows e-price">
+                        <span class="Ціна"></span>
+                        <div class="popup-wrap">
+                        <select id="priceFrom" name="s_price[0]" data-placeholder="Від" aria-labelledby="priceLabel" aria-label="Від" class="e-form field _grey">
+                            <option value="0" selected="selected">Від</option>
+                            <option value="0">0 євро</option>
+                            <option value="5000">5000 євро</option>
+                            <option value="10000">10000 євро</option>
+                            <option value="20000">20000 євро</option>
+                            <option value="30000">30000 євро</option>
+                            <option value="50000">50000 євро</option>
+                            <option value="100000">100000 євро</option>
+                        </select>
+                        <select id="priceTo" name="po_price[0]" data-placeholder="До" aria-labelledby="priceLabel" aria-label="До" class="e-form field _grey">
+                            <option value="0" selected="selected">До</option>
+                            <option value="0">0 євро</option>
+                            <option value="5000">5000 євро</option>
+                            <option value="10000">10000 євро</option>
+                            <option value="20000">20000 євро</option>
+                            <option value="30000">30000 євро</option>
+                            <option value="50000">50000 євро</option>
+                            <option value="100000">100000 євро</option>
                         </select>
                     </div>
                 </div>
                 <div class="item-column primary-column">
                     <p class="item-column primary-column">Рік випуску (оберіть рік)</p>
                     <div class="m-rows e-year">
-                        
                             <span class="Рік випуску"></span>
                     <div class="popup-wrap">
                         <select id="yearFrom" name="s_years[0]" data-placeholder="Від" aria-labelledby="yearsLabel" aria-label="Від" class="e-form field _grey">
@@ -98,7 +113,7 @@
                 <div class="item-column secondary-column">
                     <p class="item-column secondary-column">Стан</p>
                     <div class="m-rows">
-                        <select id="categories6" name="category_id" data-field="category" aria-label="Стан" data-placeholder="Будь-який" class="e-form">
+                        <select name="condition[]" multiple="multiple" size="3">
                             <option value="0">Будь-який</option>
                             <option value="1">Бита</option>
                             <option value="2">У кредиті</option>
@@ -109,7 +124,7 @@
                 <div class="item-column secondary-column">
                     <p class="item-column secondary-column">Тип палива</p>
                     <div class="m-rows">
-                        <select id="categories7" name="category_id" data-field="category" aria-label="Тип палива" data-placeholder="Будь-який" class="e-form">
+                        <select name="type_fuel">
                             <option value="0">Будь-яке</option>
                             <option value="1">Бензин</option>
                             <option value="2">Дизель</option>
@@ -120,7 +135,7 @@
                 <div class="item-column secondary-column">
                     <p class="item-column secondary-column">Тип коробки передач</p>
                     <div class="m-rows">
-                        <select id="categories8" name="category_id" data-field="category" aria-label="Тип коробки передач" data-placeholder="Будь-який" class="e-form">
+                        <select name="type_transmission">
                             <option value="0">Будь-яка</option>
                             <option value="1">Механіка</option>
                             <option value="2">Автомат</option>
@@ -131,7 +146,7 @@
                 <div class="item-column secondary-column">
                     <p class="item-column secondary-column">Колір</p>
                     <div class="m-rows">
-                        <select id="categories9" name="category_id" data-field="category" aria-label="Колір" data-placeholder="Будь-який" class="e-form">
+                        <select name="color">
                             <option value="0">Будь-який</option>
                             <option value="1">Білий</option>
                             <option value="2">Червоний</option>
@@ -146,7 +161,7 @@
                 <div class="item-column secondary-column">
                     <p class="item-column secondary-column">Комфорт</p>
                     <div class="m-rows">
-                        <select id="categories10" name="category_id" data-field="category" aria-label="Комфорт" data-placeholder="Будь-який" class="e-form">
+                        <select name="comfort">
                             <option value="0">Будь-який</option>
                             <option value="1">Повний люкс</option>
                             <option value="0">Люк</option>
@@ -156,6 +171,7 @@
                 </div> 
             </div>
         </div>
+    </div>
     </div>
 </fieldset>
 <button class="form_search_button" type="submit" name="form_search_submit">Пошук</button>
