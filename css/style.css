@@ -15,72 +15,24 @@ img {
 html {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 1.17;
-    color: #FFFFFF;
-
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    color: rgb(3, 0, 1);
 }
 
 .container {
     width: 100%;
-    max-width: 1100px;
+    max-width: calc(1110px + 2rem);
     padding-left: 1rem;
     padding-right: 1rem;
     margin-left: auto;
     margin-right: auto;
-    background: #C4C4C4;
-}
-.wrapper {
-    max-width: 1000px;  
-    overflow: hidden;
-    background: #E6E6E6;
-    margin-bottom: 50px;
-}
-.square {
-    width: 200px;
-    height: 200px;
-    background: #FC8F8F;
-}
-.left-block1 {
-    float: left;
-}
-.right-block1 {
-    float: right;
-}
-.first {
-  padding: 50px 50px 1px;  
-}
-p {
-    padding-top: 62px;
-    padding-bottom: 62px;
-    text-align: center;
-}
-.left-block2 {
-    float: left;
-}
-.square-small {
-    width: 100px;
-    height: 100px;
-    background: #FC8F8F;
-    display: inline-block;
-}
-.square-small p {
-    font-size: 36px;
-    padding: 31px;
-}
-.right-block2 {
-   float: right; 
 }
 
-.left-block3 {
-    float: left;
-}
-.right-block3 {
-    float: right;
 
+th,
+td {
+    padding: 0.25rem;
+    border: 1px solid grey;
 }
-.block3 .square {
-    display: inline-block;
-}
-
